@@ -1,0 +1,2 @@
+Links to used frameworks/libraries:
+	1) countUp.js: https://github.com/inorganik/CountUp.js

@@ -77,30 +77,38 @@ body {
   font-family: Montserrat, Arial, serif;
   font-weight: 400;
   font-size: 14px;
-  height: 100em;
   width: 100%;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 h1 {
   font-size: 4.2em;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 h3 {
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 a {
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* line 39, ../sass/style.scss */
+body::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* line 43, ../sass/style.scss */
 .btn {
   width: 215px;
   display: inline-block;
@@ -115,17 +123,32 @@ a {
   transition: all 400ms;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .bth--blanked {
   font-size: .8em;
 }
-/* line 51, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .bth--blanked:hover {
   color: #000;
   background-color: #fff;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
+.heading--ligh:after {
+  content: '';
+  display: block;
+  border: .5px solid #000;
+  width: 70%;
+  margin: 35px auto;
+}
+
+/* line 73, ../sass/style.scss */
+.u-subheading-info {
+  color: inherit;
+  line-height: 2;
+}
+
+/* line 78, ../sass/style.scss */
 .target-section {
   height: 100vh;
   width: 100%;
@@ -134,13 +157,13 @@ a {
   background-size: cover;
   color: #fff;
 }
-/* line 64, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .target-section .u-shadow-overlay {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 69, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .target-section .home-content {
   position: relative;
   height: 100%;
@@ -164,17 +187,48 @@ a {
   -o-flex-direction: unset;
   flex-direction: unset;
 }
-/* line 75, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .target-section .home-content .home-content__main {
   width: 80%;
   margin: 0 auto;
 }
-/* line 78, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .target-section .home-content .home-content__main h3 {
+  color: rgba(255, 255, 255, 0.5);
   letter-spacing: .13em;
   margin-bottom: 25px;
 }
-/* line 82, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .target-section .home-content .home-content__main .home-content__buttons {
   margin-top: 4.5em;
+}
+
+/* line 111, ../sass/style.scss */
+.s-about {
+  padding-top: 16.2rem;
+  text-align: center;
+}
+/* line 114, ../sass/style.scss */
+.s-about .l-s-about,
+.s-about .s-about-content {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 118, ../sass/style.scss */
+.s-about .l-s-about .s-about-stats,
+.s-about .s-about-content .s-about-stats {
+  max-width: 100%;
+  padding-bottom: 16.2rem;
+}
+/* line 121, ../sass/style.scss */
+.s-about .l-s-about .s-about-stats .stats__col,
+.s-about .s-about-content .s-about-stats .stats__col {
+  float: left;
+  width: 25%;
+}
+/* line 124, ../sass/style.scss */
+.s-about .l-s-about .s-about-stats .stats__col .stats__count,
+.s-about .s-about-content .s-about-stats .stats__col .stats__count {
+  font-size: 7em;
+  font-weight: 800;
 }
