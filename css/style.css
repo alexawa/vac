@@ -63,13 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../sass/style.scss */
+/* line 5, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 html,
 body {
   margin: 0;
