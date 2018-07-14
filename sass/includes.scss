@@ -1,1 +1,37 @@
 @import 'variables.scss';
+
+@mixin initTransition($time) {
+	-webkit-transition: all $time;
+	-o-transition: all $time;
+	transition: all $time;
+}
+
+@mixin initTranslateX($translate) {
+	-webkit-transform: translateX($translate);
+	-ms-transform: translateX($translate);
+	-o-transform: translateX($translate);
+	transform: translateX($translate);
+}
+
+@mixin initDisplay($display, $align, $justify, $direction) {
+	-webkit-display: $display;
+	-moz-display: $display;
+	-ms-display: $display;
+	-o-display: $display;
+	display: $display;
+
+	-ms-align-items: $align;
+	align-items: $align;
+
+	-webkit-justify-content: $justify;
+	-moz-justify-content: $justify;
+	-ms-justify-content: $justify;
+	-o-justify-content: $justify;
+	justify-content: $justify;
+
+	-webkit-flex-direction: $direction;
+	-moz-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	-o-flex-direction: $direction;
+	flex-direction: $direction;
+}

@@ -6,6 +6,9 @@ Error: An @import loop has been found:
         from line 1 of C:/Users/alexsawa/Desktop/vacances/sass/variables.scss
 
 1: @import 'includes.scss';
+2: 
+3: $initSize: 14;
+4: $initHeight: 100;
 
 Backtrace:
 C:/Users/alexsawa/Desktop/vacances/sass/includes.scss:1
@@ -62,4 +65,4 @@ D:/Programm files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: An @import loop has been found:\A            C:/Users/alexsawa/Desktop/vacances/sass/variables.scss imports C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A            C:/Users/alexsawa/Desktop/vacances/sass/includes.scss imports C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A         on line 1 of C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A         from line 1 of C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A \A 1: @import 'includes.scss';"; }
+  content: "Error: An @import loop has been found:\A            C:/Users/alexsawa/Desktop/vacances/sass/variables.scss imports C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A            C:/Users/alexsawa/Desktop/vacances/sass/includes.scss imports C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A         on line 1 of C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A         from line 1 of C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A \A 1: @import 'includes.scss';\A 2: \A 3: $initSize: 14;\A 4: $initHeight: 100;"; }

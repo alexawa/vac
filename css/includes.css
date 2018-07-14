@@ -6,6 +6,11 @@ Error: An @import loop has been found:
         from line 1 of C:/Users/alexsawa/Desktop/vacances/sass/includes.scss
 
 1: @import 'variables.scss';
+2: 
+3: @mixin initTransition($time) {
+4: 	-webkit-transition: all $time;
+5: 	-o-transition: all $time;
+6: 	transition: all $time;
 
 Backtrace:
 C:/Users/alexsawa/Desktop/vacances/sass/variables.scss:1
@@ -62,4 +67,4 @@ D:/Programm files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: An @import loop has been found:\A            C:/Users/alexsawa/Desktop/vacances/sass/includes.scss imports C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A            C:/Users/alexsawa/Desktop/vacances/sass/variables.scss imports C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A         on line 1 of C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A         from line 1 of C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A \A 1: @import 'variables.scss';"; }
+  content: "Error: An @import loop has been found:\A            C:/Users/alexsawa/Desktop/vacances/sass/includes.scss imports C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A            C:/Users/alexsawa/Desktop/vacances/sass/variables.scss imports C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A         on line 1 of C:/Users/alexsawa/Desktop/vacances/sass/variables.scss\A         from line 1 of C:/Users/alexsawa/Desktop/vacances/sass/includes.scss\A \A 1: @import 'variables.scss';\A 2: \A 3: @mixin initTransition($time) {\A 4: 	-webkit-transition: all $time;\A 5: 	-o-transition: all $time;\A 6: 	transition: all $time;"; }
